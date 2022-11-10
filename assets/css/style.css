@@ -41,19 +41,127 @@ body {
   font-size: 1.6rem;
 }
 
+#app {
+  width: 100%;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1140px;
-  height: 135px;
+  height: 70px;
+}
+
+.logo img {
+  width: 160px;
+  margin-left: 65px;
+}
+
+#menu-mobile {
+  background-image: url("../img/icons/icon-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin-right: 65px;
+}
+
+nav {
+  display: none;
+}
+
+.main_banner {
+  width: 100%;
+  position: relative;
+}
+
+.main_banner img {
+  position: relative;
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+.conteudo-banner {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  margin: 0 auto;
+
+  color: var(--bg-color-white);
+}
+
+.conteudo-banner h1 {
+  margin-top: 50px;
+  font-family: "gotham_bold";
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.conteudo-banner p {
+  line-height: 2rem;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.conteudo-banner button {
+  width: 165px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: var(--bg-color-button-yellow);
+  border: 0px;
+  border-radius: 0.3rem;
+}
+
+.conteudo-banner button a {
+  text-decoration: none;
+  color: var(--bg-color-white);
+}
+
+#icon-whatsapp {
+  position: fixed;
+  top: 37rem;
+  right: 3.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+#container-about {
+  width: 100%;
+  background: var(--bg--color-blue);
+}
+
+.box-about {
+  width: 314px;
   margin: 0 auto;
 }
 
-nav ul {
-  display: flex;
+.box-about h2 {
+  font-family: "gotham_light";
+  padding: 40px 0;
+  text-align: center;
+  font-size: 3.1rem;
+  color: var(--bg-color-white);
 }
+
+.box-about img {
+  width: 100%;
+}
+
+.box-about p {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  text-align: justify;
+  font-family: "gotham_light";
+
+  line-height: 130%;
+
+  color: var(--bg-color-white);
+}
+
+/*
 
 nav ul li {
   padding-right: 30px;
@@ -75,24 +183,6 @@ nav ul li a:hover {
   font-weight: 600;
 }
 
-.main_banner {
-  width: 100%;
-  position: relative;
-}
-
-.main_banner img {
-  width: 100%;
-}
-
-#fade {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .conteudo-banner {
   max-width: 1140px;
   width: 1140px;
@@ -102,20 +192,7 @@ nav ul li a:hover {
   color: var(--bg-color-white);
 }
 
-#fade .conteudo-banner h1 {
-  font-family: "gotham_bold";
-  font-size: 6.8rem;
-  line-height: 8rem;
-  margin-bottom: 30px;
-}
-
-#fade .conteudo-banner p {
-  line-height: 3rem;
-  margin-bottom: 100px;
-  font-size: 2rem;
-}
-
-#fade .conteudo-banner button {
+.conteudo-banner button {
   padding: 2rem 6rem;
   font-size: 2rem;
   background: var(--bg-color-button-yellow);
@@ -123,15 +200,4 @@ nav ul li a:hover {
   border-radius: 0.8rem;
 }
 
-#fade .conteudo-banner button a {
-  text-decoration: none;
-  color: var(--bg-color-white);
-}
-
-#icon-whatsapp {
-  position: fixed;
-  right: 20rem;
-  bottom: 15rem;
-  width: 80px;
-  height: 80px;
-}
+*/
