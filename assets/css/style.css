@@ -148,7 +148,7 @@ header {
 }
 
 .headLine {
-  padding-top: 5rem;
+  padding-top: 1rem;
   color: var(--color-white);
   height: fit-content;
 }
@@ -181,10 +181,15 @@ header {
 
 .headLine #whatsapp {
   position: fixed;
-  right: 150px;
-  bottom: 180px;
-  width: 50px;
-  height: 50px;
+  right: 8rem;
+  bottom: 18rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.headLine #whatsapp img {
+  width: 8rem;
+  height: 8rem;
 }
 
 /*######################################################## ABOUT */
@@ -233,7 +238,7 @@ header {
   list-style: none;
   display: flex;
   line-height: 130%;
-  padding-bottom: 25px;
+  padding-bottom: 2.5rem;
   font-size: 2.5rem;
 }
 
@@ -242,9 +247,9 @@ header {
 }
 
 #about-column-right .item ul li img {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
 }
 
 #about-column-right .item ul li span strong {
@@ -263,7 +268,7 @@ header {
 .gallery {
   display: flex;
   flex-flow: row nowrap;
-  gap: 60px;
+  gap: 7rem;
 }
 
 .item {
@@ -387,7 +392,8 @@ header {
 
 .box-comments {
   position: relative;
-  width: 1300px;
+  max-width: 1300px;
+  padding-left: 5rem;
 }
 
 .comments-wrapper {
@@ -397,7 +403,7 @@ header {
 .comments {
   display: flex;
   flex-flow: row nowrap;
-  gap: 6rem;
+  gap: 7rem;
 }
 
 .commentsItem {
@@ -447,14 +453,13 @@ header {
 }
 
 .comments-content p {
-  padding-top: 5rem;
   font-size: 1.6;
   color: var(--color-grey);
 }
 
 .profile {
   display: flex;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .profile-google {
@@ -541,4 +546,72 @@ footer h3 {
 #footer-location p {
   font-family: var(--fonte-menu-texto);
   padding: 20px 0;
+}
+
+@media (max-width: 1400px) {
+  .main-content {
+    max-width: 1200px;
+  }
+  .container {
+    width: 100%;
+  }
+  .headLine h1 {
+    font-size: 5.2rem;
+  }
+  .headLine p {
+    font-size: 2.2rem;
+  }
+
+  .headline button {
+    font-size: 1.8rem;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  #about-column-right h2 {
+    font-size: 5.5rem;
+  }
+
+  #about-column-right .item ul li span {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+  #about-column-right .item ul li img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .box-comments {
+    padding-left: 5rem;
+  }
+
+  .commentUnit {
+    width: 38rem;
+    flex-shrink: 0;
+  }
+
+  footer {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-content {
+    max-width: 800px;
+  }
+
+  header {
+    bottom: 0;
+  }
+
+  .menu {
+    padding-top: 5rem;
+    flex-direction: column;
+  }
+
+  .menu-desktop {
+    flex-direction: column;
+  }
 }
