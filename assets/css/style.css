@@ -665,7 +665,7 @@ footer h3 {
 }
 
 #footerLocation h2 {
-  font-family: var(--fonte-titulos);
+  font-family: var(--fonte-bold);
   padding: 20px 0;
 }
 
