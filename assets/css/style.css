@@ -20,6 +20,18 @@
   --fonte-button: "gotham-medium";
 }
 
+.closeMenu,
+.logoMobile,
+.headLineMobile,
+.aboutMobile,
+.clinicMobile {
+  display: none;
+}
+
+.logoMobile img {
+  width: 20rem;
+}
+
 @font-face {
   font-family: "gothamBook";
   src: url("../fonts/gotham/GothamBook.ttf") format("truetype");
@@ -54,6 +66,22 @@ body {
   width: 100%;
   font-size: 1.6rem;
   font-family: var(--fonte-menu-texto);
+  background: var(--color-white);
+}
+
+.boxBlue {
+  background: var(--color-blue);
+  width: 100%;
+}
+
+.boxGrey {
+  background: var(--color-grey);
+  width: 100%;
+}
+
+.boxWhite {
+  background: var(--color-white);
+  width: 100%;
 }
 
 h1,
@@ -64,84 +92,81 @@ h5 {
   font-family: var(--fonte-titulos);
 }
 
+header {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 10rem;
+  z-index: 1;
+}
+
 #home,
 #about,
-#tratamentos,
+#treatments,
 #clinic,
-#comentarios,
-#container-location,
-#contato {
-  padding-top: 11rem;
+#comments,
+#location,
+#contact {
+  padding-top: 10rem;
 }
 
-main {
+.mainContentDesktop {
+  max-width: 1200px;
   width: 100%;
-}
-
-.main-content {
-  max-width: 1300px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.section {
-  height: 100vh;
-}
-
-header {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
+.mainContentMobile {
+  max-width: 480px;
   width: 100%;
-
-  background: var(--color-white);
-
-  z-index: 9;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
+
+/* ######################################################## START MENU */
 
 .menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 100px;
+  position: fixed;
+  top: 0;
+  display: block;
+  padding-top: 3.5rem;
+  width: 100%;
+  height: 10rem;
+  z-index: 1;
 }
 
-.menu-desktop {
+.menuContent {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.menuContent nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.menuContent nav ul li {
   list-style: none;
-  gap: 0.1rem;
-  font-size: 1.8rem;
   font-family: var(--fonte-menu-texto);
 }
 
-.menu-desktop li a {
-  text-decoration: none;
-
-  color: var(--color-blue);
-  display: block;
-  padding: 4rem 1rem;
-
-  position: relative;
-}
-
-.negrito {
+.menuContent ul li:last-child {
   font-family: var(--fonte-bold);
 }
 
-/* .menu-desktop li a:last-child {
-  font-family: var(--fonte-titulos);
-} */
+.menuContent ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-blue);
+}
 
-.menu-desktop li a::after {
+.menuContent ul li a::after {
   content: "";
   position: absolute;
-  bottom: 3rem;
+  bottom: -2rem;
   left: 50%;
   width: 0;
   height: 0.2rem;
@@ -149,31 +174,27 @@ header {
   transition: all 300ms ease-in-out;
 }
 
-.menu-desktop li a:hover::after {
-  width: 70%;
-  left: 15%;
+.menuContent ul li a:hover::after {
+  width: 80%;
+  left: 10%;
 }
 
-.banner {
+/* ######################################################## END MENU */
+
+/* ######################################################## START HOME */
+
+.bannerPrincipal {
   background-image: url("../img/banner-desktop01.jpg");
-  background-position: center right;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-  height: 90vh;
-
-  position: relative;
-}
-
-.banner img {
-  width: 100%;
+  margin-top: 10rem;
+  /* height: 100%; */
 }
 
 .headLine {
-  position: absolute;
-  top: 90px;
-  left: 160px;
+  width: 60vw;
+  padding: 0 0 20rem 15rem;
   color: var(--color-white);
   height: fit-content;
 }
@@ -182,7 +203,7 @@ header {
   font-family: var(--fonte-titulos);
   font-size: 7.6rem;
   line-height: 120%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .headLine p {
@@ -200,8 +221,12 @@ header {
   border-radius: 1rem;
   text-transform: uppercase;
   border: none;
-  color: var(--color-white);
   cursor: pointer;
+}
+
+.headLine button a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 .headLine #whatsapp {
@@ -217,17 +242,15 @@ header {
   height: 10rem;
 }
 
-/*######################################################## ABOUT */
+/* ######################################################## END HOME */
 
-.aboutMobile {
-  display: none;
+/* ######################################################## START ABOUT */
+
+#about {
+  color: var(--color-white);
 }
 
-.blue {
-  background: var(--color-blue);
-}
-
-.about-content-desktop {
+.aboutDesktop {
   padding-top: 5rem;
   padding-bottom: 10rem;
   display: flex;
@@ -235,37 +258,37 @@ header {
   color: var(--color-white);
 }
 
-#about-column-left {
+#aboutColumnLeft {
   width: 45%;
 }
 
-#about-column-right {
+#aboutColumnRight {
   width: 55%;
 }
 
-#about-column-left img {
+#aboutColumnLeft img {
   width: 100%;
   margin-bottom: 4rem;
 }
 
-#about-column-left p {
+#aboutColumnLeft p {
   font-size: 2.2rem;
   text-align: justify;
   line-height: 120%;
 }
 
-#about-column-right h2 {
+#aboutColumnRight h2 {
   font-size: 6rem;
   margin-bottom: 3rem;
 }
 
-#about-column-right h3 {
+#aboutColumnRight h3 {
   font-size: 3rem;
   padding-top: 2rem;
   margin-bottom: 4rem;
 }
 
-#about-column-right .slide ul li {
+#aboutColumnRight .slide ul li {
   list-style: none;
   display: flex;
   align-items: center;
@@ -273,34 +296,32 @@ header {
   padding-bottom: 4rem;
 }
 
-#about-column-right .slide ul li span {
+#aboutColumnRight .slide ul li span {
   font-size: 2.2rem;
   line-height: 125%;
 }
 
-#about-column-right .slide ul li img {
+#aboutColumnRight .slide ul li img {
   width: 3rem;
   height: 3rem;
   margin-right: 2rem;
 }
 
-#about-column-right .slide ul li span strong {
+#aboutColumnRight .slide ul li span strong {
   font-family: var(--fonte-titulos);
 }
 
-/*############################################# ABOUT MOBILE */
-
-.main-content-mobile h2 {
+.mainContentMobile h2 {
   text-align: center;
   font-size: 4.5rem;
   padding: 5rem 0;
 }
 
-.main-content-mobile img {
+.mainContentMobile img {
   width: 100%;
 }
 
-.main-content-mobile p {
+.mainContentMobile p {
   font-size: 2.3rem;
   text-align: justify;
   line-height: 120%;
@@ -346,7 +367,317 @@ header {
   font-family: var(--fonte-titulos);
 }
 
-/*############################################# Slide Curriculo*/
+/* ######################################################## END ABOUT */
+
+/* ######################################################## START TREATMENTS */
+
+#treatments {
+  padding: 10rem 0;
+}
+
+#treatments h2 {
+  color: var(--color-blue);
+  font-family: var(--fonte-titulos);
+  font-size: 6rem;
+}
+
+.treatmentsContent {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+  gap: 20px;
+}
+
+.treatmentsDouble {
+  display: flex;
+  gap: 20px;
+  width: 49%;
+}
+
+.treatmentsContent .treatmentsDouble section {
+  width: 45%;
+}
+
+.treatmentsContent .treatmentsDouble section img {
+  width: 8rem;
+  padding-bottom: 2rem;
+}
+
+.treatmentsContent .treatmentsDouble section h3 {
+  font-family: var(--fonte-titulos);
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+.treatmentsContent .treatmentsDouble section p {
+  font-family: var(--fonte-menu-texto);
+  font-size: 2rem;
+  color: var(--color-grey);
+}
+
+/* ######################################################## END TREATMENTS */
+
+/* ######################################################## START CLINIC */
+
+#clinic {
+  color: var(--color-white);
+  height: 65rem;
+}
+
+.clinicDesktop {
+  display: flex;
+}
+
+.clinicLeft {
+  width: 45%;
+}
+
+.clinicRight {
+  width: 55%;
+}
+
+.clinic-content section iframe {
+  width: 90%;
+  height: 90%;
+}
+
+.clinicLeft h2 {
+  font-size: 6rem;
+  padding-bottom: 4rem;
+}
+
+.clinicLeft p {
+  font-size: 2.5rem;
+  line-height: 130%;
+  padding-bottom: 6rem;
+}
+
+.clinicLeft button {
+  font-family: var(--fonte-button);
+  font-size: 1.8rem;
+  padding: 1.5rem 2rem;
+  background: var(--color-yellow);
+  border-radius: 1rem;
+  text-transform: uppercase;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.clinicLeft button a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.clinicRight h4 {
+  padding-top: 2rem;
+  font-family: var(--fonte-menu-texto);
+}
+
+.clinicMobile {
+  height: fit-content;
+}
+
+.clinicContentMobile {
+  max-width: 48rem;
+  width: 48rem;
+  padding: 0 2rem;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.clinicContentMobile iframe {
+  width: 100%;
+  height: 27rem;
+}
+
+.clinicContentMobile h2 {
+  text-align: center;
+  font-size: 3.9rem;
+  padding-bottom: 3rem;
+}
+
+.clinicContentMobile p {
+  font-size: 2rem;
+  line-height: 130%;
+  padding-bottom: 4rem;
+}
+
+.clinicContentMobile h4 {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  font-family: var(--fonte-menu-texto);
+}
+
+.clinicContentMobile button {
+  font-family: var(--fonte-button);
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  background: var(--color-yellow);
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.clinicContentMobile a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* ######################################################## END CLINIC */
+
+/* ######################################################## START COMMENTS */
+
+.commentsContentDesktop {
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.comments-content-mobile {
+  max-width: 48rem;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+  display: none;
+}
+
+.commentsContentDesktop h2 {
+  text-align: center;
+  font-family: var(--fonte-titulos);
+  color: var(--color-blue);
+  font-size: 5rem;
+  padding-bottom: 5rem;
+}
+
+.commentsContentDesktop hr {
+  width: 25rem;
+  height: 0.2rem;
+  color: var(--color-grey);
+  background-color: var(--color-grey);
+  margin: -2rem auto 4rem auto;
+}
+
+.commentsContentDesktop p {
+  font-size: 1.6;
+  color: var(--color-grey);
+  padding: 1rem 0;
+}
+
+.commentUnit {
+  max-width: 33%;
+}
+
+.commentUnit p {
+  max-width: 80%;
+  font-size: 2rem;
+  line-height: 120%;
+}
+
+.profile {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.profileGoogle {
+  margin-left: 2rem;
+}
+
+.profileGoogle h4 {
+  font-family: var(--fonte-titulos);
+  font-size: 2rem;
+}
+
+.comments-content-mobile .profileGoogle h4 {
+  font-size: 1.6rem;
+}
+
+.profileGoogle p {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+}
+
+.profileGoogle img {
+  width: 10.5rem;
+}
+
+.commentUnit {
+  padding: auto 5rem;
+}
+
+/* ######################################################## END COMMENTS */
+
+/* ######################################################## START LOCATION */
+
+#location {
+  width: 100%;
+}
+
+/* ######################################################## END LOCATION */
+
+/* ######################################################## START FOOTER */
+
+footer {
+  width: 100%;
+  padding: 60px 0;
+  background: var(--color-blue);
+}
+
+footer h2 {
+  font-family: var(--fonte-bold);
+  font-size: 2.5rem;
+  padding: 20px 0;
+}
+
+footer h3 {
+  font-family: var(--fonte-titulos);
+  font-size: 1.6rem;
+  padding: 20px 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerMenu img {
+  padding-bottom: 20px;
+}
+
+.footerNav ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.footerNav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--fonte-menu-texto);
+  cursor: pointer;
+}
+
+#footerContato {
+  color: var(--color-white);
+}
+
+#footerLocation {
+  color: var(--color-white);
+}
+
+#footerLocation h2 {
+  font-family: var(--fonte-titulos);
+  padding: 20px 0;
+}
+
+#footerLocation p {
+  font-family: var(--fonte-menu-texto);
+  padding: 20px 0;
+}
+
+/* ######################################################## END FOOTER */
+
+/* ######################################################## START SLIDE */
+
 .slider,
 .sliderMobile,
 .sliderComments {
@@ -369,10 +700,10 @@ header {
   width: 200%;
 }
 
-.slidesCommentsMobile {
+/* .slidesCommentsMobile {
   display: flex;
   width: 300%;
-}
+} */
 
 .slide,
 .slideMobile {
@@ -389,12 +720,13 @@ header {
   padding-bottom: 3rem;
 }
 
-.slideCommentsMobile {
+/* .slideCommentsMobile {
   display: flex;
-  gap: 5rem;
-  width: 33.3%;
+  gap: 3rem;
+  width: 45rem;
+  margin: 0 auto;
   padding-bottom: 3rem;
-}
+} */
 
 .manualNavigation,
 .manualNavigationMobile {
@@ -438,32 +770,20 @@ header {
   margin-left: -50%;
 }
 
-#radio3:checked ~ .prime {
+#radio3:checked ~ .first {
   margin-left: 0%;
 }
 
-#radio4:checked ~ .prime {
+#radio4:checked ~ .first {
   margin-left: -50%;
 }
 
 #radio5:checked ~ .first {
-  margin-left: 0%;
+  margin-left: 0;
 }
 
 #radio6:checked ~ .first {
   margin-left: -50%;
-}
-
-#radio7:checked ~ .first {
-  margin-left: 0%;
-}
-
-#radio8:checked ~ .first {
-  margin-left: -33%;
-}
-
-#radio9:checked ~ .first {
-  margin-left: -66%;
 }
 
 .navigationAuto,
@@ -498,11 +818,11 @@ header {
   background-color: var(--color-grey);
 }
 
-#radio3:checked ~ .navigationAutoMobile .autoBtn3 {
+#radio3:checked ~ .navigationAuto .autoBtn3 {
   background-color: var(--color-grey);
 }
 
-#radio4:checked ~ .navigationAutoMobile .autoBtn4 {
+#radio4:checked ~ .navigationAuto .autoBtn4 {
   background-color: var(--color-grey);
 }
 
@@ -514,418 +834,204 @@ header {
   background-color: var(--color-grey);
 }
 
-#radio7:checked ~ .navigationAuto .autoBtn7 {
-  background-color: var(--color-grey);
-}
+/* ######################################################## END SLIDE */
 
-#radio8:checked ~ .navigationAuto .autoBtn8 {
-  background-color: var(--color-grey);
-}
+/* ######################################################## START MEDIA QWERYS */
 
-#radio9:checked ~ .navigationAuto .autoBtn9 {
-  background-color: var(--color-grey);
-}
-
-/*######################################################## END ABOUT */
-
-/*######################################################## START TREATMENTS */
-
-.treatments {
-  width: 100%;
-  background: var(--color-white);
-  padding: 5rem 0;
-}
-
-.treatments h2 {
-  color: var(--color-blue);
-  font-family: var(--fonte-titulos);
-  font-size: 6rem;
-}
-
-.treatments-content {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 10rem;
-  gap: 20px;
-}
-
-.treatmentsDouble {
-  display: flex;
-  gap: 20px;
-  width: 49%;
-}
-
-.treatments-content .treatmentsDouble section {
-  width: 45%;
-}
-
-.treatments-content .treatmentsDouble section img {
-  width: 8rem;
-  padding-bottom: 2rem;
-}
-
-.treatments-content .treatmentsDouble section h3 {
-  font-family: var(--fonte-titulos);
-  font-size: 2.4rem;
-  padding-bottom: 2rem;
-}
-
-.treatments-content .treatmentsDouble section p {
-  font-family: var(--fonte-menu-texto);
-  font-size: 2rem;
-  color: var(--color-grey);
-}
-
-/*######################################################## END TREATMENTS */
-
-/*######################################################## START CLINIC */
-
-.clinicaDesktop,
-.clinicaMobile {
-  width: 100%;
-  padding-top: 16rem;
-  padding-bottom: 10rem;
-  background: var(--color-grey);
-  color: var(--color-white);
-}
-
-.clinicaMobile {
-  display: none;
-}
-
-.clinic-content {
-  display: flex;
-}
-
-.clinic-left {
-  width: 45%;
-}
-
-.clinic-right {
-  width: 55%;
-}
-
-.clinic-content section iframe {
-  width: 90%;
-  height: 90%;
-}
-
-.clinic-left h2 {
-  font-size: 6rem;
-  padding-bottom: 4rem;
-}
-
-.clinic-left p {
-  font-size: 2.3rem;
-  line-height: 130%;
-  padding-bottom: 6rem;
-}
-
-.clinic-left button {
-  font-family: var(--fonte-button);
-  font-size: 1.8rem;
-  padding: 1.5rem 2rem;
-  background: var(--color-yellow);
-  border-radius: 1rem;
-  text-transform: uppercase;
-  border: none;
-  color: var(--color-white);
-  cursor: pointer;
-}
-
-.clinic-right h4 {
-  padding-top: 2rem;
-  font-family: var(--fonte-menu-texto);
-}
-
-/*######################################################## END CLINIC */
-
-/*######################################################## START COMMENTS */
-
-.comments-content-desktop {
-  padding: 5rem 0;
-  margin: 0 auto;
-}
-
-.comments-content-mobile {
-  max-width: 48rem;
-  padding-bottom: 5rem;
-  margin: 0 auto;
-  display: none;
-}
-
-.comments-content-desktop h2,
-.comments-content-mobile h2 {
-  text-align: center;
-  font-family: var(--fonte-titulos);
-  color: var(--color-blue);
-  font-size: 5rem;
-  padding-bottom: 5rem;
-}
-
-.comments-content-desktop hr,
-.comments-content-mobile hr {
-  width: 25rem;
-  height: 0.2rem;
-  color: var(--color-grey);
-  background-color: var(--color-grey);
-  margin: -2rem auto 4rem auto;
-}
-
-.comments-content-desktop p,
-.comments-content-mobile p {
-  font-size: 1.6;
-  color: var(--color-grey);
-  padding: 1rem 0;
-}
-
-.comments-content-mobile .commentUnit {
-  max-width: 50%;
-}
-
-.commentUnit {
-  max-width: 33%;
-}
-
-.commentUnit p {
-  max-width: 80%;
-  font-size: 2rem;
-  line-height: 120%;
-}
-
-.comments-content-mobile .commentUnit p {
-  max-width: 100%;
-  font-size: 1.4rem;
-  line-height: 120%;
-}
-
-.profile {
-  display: flex;
-  padding: 2rem 0;
-}
-
-.profile-google {
-  margin-left: 2rem;
-}
-
-.profile-google h4 {
-  font-family: var(--fonte-titulos);
-  font-size: 2rem;
-}
-
-.comments-content-mobile .profile-google h4 {
-  font-size: 1.6rem;
-}
-
-.profile-google p {
-  font-size: 1.6rem;
-  padding: 0.5rem;
-}
-
-.comments-content-mobile p {
-  font-size: 1.4rem;
-}
-
-.profile-google img {
-  width: 10.5rem;
-}
-
-.commentUnit {
-  padding: auto 5rem;
-}
-
-/*######################################################## END COMMENTS */
-
-#container-location {
-  width: 100%;
-}
-
-/*######################################################## START FOOTER */
-
-footer {
-  width: 100%;
-  padding: 60px 0;
-  background: var(--color-blue);
-}
-
-footer h2 {
-  font-family: var(--fonte-bold);
-  font-size: 2.5rem;
-  padding: 20px 0;
-}
-
-footer h3 {
-  font-family: var(--fonte-titulos);
-  font-size: 1.6rem;
-  padding: 20px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-#footer-menu img {
-  padding-bottom: 20px;
-}
-
-.footer-nav ul li {
-  list-style: none;
-  padding: 10px 0;
-}
-
-.footer-nav ul li a {
-  color: var(--color-white);
-  text-decoration: none;
-  font-family: var(--fonte-menu-texto);
-  cursor: pointer;
-}
-
-#footer-contato {
-  color: var(--color-white);
-}
-
-#footer-location {
-  color: var(--color-white);
-}
-
-#footer-location h2 {
-  font-family: var(--fonte-titulos);
-  padding: 20px 0;
-}
-
-#footer-location p {
-  font-family: var(--fonte-menu-texto);
-  padding: 20px 0;
-}
-
-/*######################################################## END FOOTER */
-
-/*######################################################## START MEDIA QUERYS */
-
-@media (max-width: 1400px) {
-  .main-content {
-    max-width: 1200px;
-  }
-  .container {
-    width: 100%;
+@media (max-width: 1680px) {
+  .headLine {
+    width: 60vw;
+    padding: 0 0 15rem 15rem;
+    color: var(--color-white);
+    height: fit-content;
   }
 
-  .banner {
-    background-image: url("../img/banner-desktop01.jpg");
-    background-position: center right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 1rem;
-    margin-bottom: -1rem;
-    height: 90vh;
-
-    position: relative;
-  }
   .headLine h1 {
-    font-size: 5.2rem;
+    font-size: 6.6rem;
+    margin-bottom: 3rem;
   }
+
   .headLine p {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
   }
 
   .headLine button {
-    font-family: var(--fonte-button);
-    font-size: 1.6rem;
-    padding: 1.5rem 2.2rem;
-    background: var(--color-yellow);
-    border-radius: 1rem;
-    text-transform: uppercase;
-    border: none;
-    color: var(--color-white);
-    cursor: pointer;
-  }
-
-  .item {
-    width: 90%;
-  }
-
-  #about-column-right h2 {
-    font-size: 5.5rem;
-  }
-
-  #about-column-right .item ul li span {
     font-size: 2rem;
-    line-height: 120%;
+    padding: 1.5rem 2.2rem;
+    border-radius: 1rem;
   }
-  #about-column-right .item ul li img {
-    width: 2.5rem;
-    height: 2.5rem;
+}
+
+@media (max-width: 1440px) {
+  .headLine {
+    width: 60vw;
+    padding: 0 0 12rem 13rem;
+    color: var(--color-white);
+    height: fit-content;
   }
 
-  .box-comments {
-    padding-left: 5rem;
+  .headLine h1 {
+    font-size: 5.5rem;
+    margin-bottom: 3rem;
   }
 
-  .commentUnit {
-    width: 38rem;
-    flex-shrink: 0;
+  .headLine p {
+    font-size: 2.3rem;
+    margin-bottom: 6rem;
   }
 
-  footer {
-    padding-left: 5rem;
+  .headLine button {
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
   }
 }
 
 @media (max-width: 1050px) {
-  /* .main-content {
-    max-width: 800px;
-  }
-
-  header {
-    bottom: 0;
-  }
-
-  .menu {
-    padding-top: 5rem;
-    flex-direction: column;
-  }
-
-  .menu-desktop {
-    flex-direction: column;
-  }*/
-
-  .banner {
+  .bannerPrincipal {
     background-image: url("../img/banner-mobile01.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 1rem;
-    margin-bottom: -1rem;
-    height: 80rem;
-
-    position: relative;
+    margin-top: 10rem;
+    height: 100rem;
   }
 
-  .main-content-mobile {
-    max-width: 48rem;
+  .headLine {
+    display: none;
+  }
 
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .headLineMobile {
+    display: block;
+    width: 100vw;
+    padding: 2rem 0 12rem 13rem;
     color: var(--color-white);
+    height: fit-content;
+  }
+
+  .headLineMobile h1 {
+    font-size: 5.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .headLineMobile p {
+    font-size: 2.3rem;
+    margin-bottom: 6rem;
+  }
+
+  .headLineMobile button {
+    font-family: var(--fonte-button);
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    background: var(--color-yellow);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+  }
+
+  .headLineMobile button a {
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  .headLineMobile #whatsapp {
+    position: fixed;
+    right: 9rem;
+    bottom: 13rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .headLineMobile #whatsapp img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .menu {
+    bottom: 0;
+    display: none;
+  }
+
+  .menuContent,
+  .menuContent nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background: var(--color-white);
+  }
+
+  .menuContent nav {
+    width: 100%;
+  }
+
+  .menuContent nav ul li {
+    text-align: center;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+
+  .closeMenu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  }
+
+  .logoMobile {
+    position: fixed;
+    z-index: 1;
+    top: 4rem;
+    left: 5rem;
+    display: block;
+  }
+
+  .closeMenuLabel::after {
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 4rem;
+    /* background: var(--primary-color); */
+    color: var(--color-blue);
+    font-size: 4.5rem;
+    line-height: 4rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    padding: 1rem 1.4rem 1rem 1rem;
+    cursor: pointer;
+    /* border: 0.2rem solid var(--color-blue); */
+  }
+  .closeMenu:checked ~ .menu {
+    display: block;
+  }
+
+  .closeMenu:checked ~ .closeMenuLabel::after {
+    content: "×";
   }
 
   .aboutDesktop {
     display: none;
   }
+
   .aboutMobile {
     display: block;
   }
 
-  .treatments {
+  #treatments {
     max-width: 480px;
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .treatments-content {
+  #treatments h2 {
+    font-size: 4.5rem;
+  }
+
+  .treatmentsContent {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -938,124 +1044,103 @@ footer h3 {
     width: 100%;
   }
 
-  .treatments-content .treatmentsDouble section h3 {
-    font-size: 2rem;
-  }
-
-  .treatments-content .treatmentsDouble section p {
+  .treatmentsContent .treatmentsDouble section h3 {
     font-size: 1.6rem;
   }
 
-  footer {
-    display: flex;
-    align-items: center;
+  .treatmentsContent .treatmentsDouble section p {
+    font-size: 1.4rem;
   }
 
-  #contato {
-    padding-top: 15rem;
-  }
-
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .clinicaDesktop {
-    display: none;
-  }
-
-  .clinicaMobile {
-    display: flex;
+  #clinic {
     height: 80rem;
   }
 
-  .clinic-content-mobile {
-    max-width: 48rem;
-    width: 48rem;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .clinic-content-mobile iframe {
-    width: 100%;
-    height: 27rem;
-  }
-
-  .clinic-content-mobile h2 {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-  }
-
-  .clinic-content-mobile p {
-    font-size: 2.3rem;
-    line-height: 130%;
-    padding-bottom: 5rem;
-  }
-
-  .clinic-content-mobile h4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-family: var(--fonte-menu-texto);
-  }
-
-  .clinic-content-mobile button {
-    font-family: var(--fonte-button);
-    font-size: 1.8rem;
-    padding: 1.5rem 3rem;
-    background: var(--color-yellow);
-    border-radius: 1rem;
-    text-transform: uppercase;
-    border: none;
-    color: var(--color-white);
-    cursor: pointer;
-  }
-
-  .clinic-content-mobile a {
-    text-decoration: none;
-    color: var(--color-white);
-  }
-
-  .comments-content-desktop {
+  .clinicDesktop {
     display: none;
   }
-
-  .comments-content-mobile {
-    display: block;
+  .clinicMobile {
+    display: flex;
   }
 
-  .slideCommentsMobile {
-    max-width: 48rem;
+  .footerContent {
+    flex-direction: column;
+    padding-left: 7rem;
   }
 }
 
-/* .clinic-content section iframe {
-  width: 90%;
-  height: 90%;
+@media (max-width: 700px) {
+  .bannerPrincipal {
+    height: 66rem;
+  }
+
+  .headLineMobile {
+    margin-top: -3rem;
+    padding: 0 0 12rem 10rem;
+  }
+
+  .headLineMobile h1 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .headLineMobile p {
+    font-size: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .headLineMobile button {
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+  }
+
+  .headLineMobile #whatsapp {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .headLineMobile #whatsapp img {
+    width: 8rem;
+    height: 8rem;
+  }
 }
 
-.clinic-left h2 {
-  font-size: 6rem;
-  padding-bottom: 4rem;
-}
+@media (max-width: 480px) {
+  .bannerPrincipal {
+    height: 46rem;
+  }
 
-.clinic-left p {
-  font-size: 2.3rem;
-  line-height: 130%;
-  padding-bottom: 6rem;
-}
+  .headLineMobile {
+    margin-top: -5rem;
+    padding: 0 0 12rem 6rem;
+  }
 
-.clinic-left button {
-  font-family: var(--fonte-button);
-  font-size: 1.8rem;
-  padding: 1.5rem 2rem;
-  background: var(--color-yellow);
-  border-radius: 1rem;
-  text-transform: uppercase;
-  border: none;
-  color: var(--color-white);
-  cursor: pointer;
-}
+  .headLineMobile h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
 
-.clinic-right h4 {
-  padding-top: 2rem;
-  font-family: var(--fonte-menu-texto);
-} */
+  .headLineMobile p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .headLineMobile button {
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+  }
+
+  .headLineMobile #whatsapp {
+    right: 2rem;
+    bottom: 13rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .headLineMobile #whatsapp img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
