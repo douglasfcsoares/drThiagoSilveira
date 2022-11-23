@@ -215,10 +215,11 @@ header {
 
 .headLine button {
   font-family: var(--fonte-button);
+  height: 6rem;
   font-size: 2.4rem;
-  padding: 1.5rem 2.2rem;
+  padding: 0 2.2rem;
   background: var(--color-yellow);
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
@@ -279,6 +280,7 @@ header {
 
 #aboutColumnRight h2 {
   font-size: 6rem;
+  line-height: 6.5rem;
   margin-bottom: 3rem;
 }
 
@@ -335,6 +337,7 @@ header {
 
 #aboutColumnCurriculumMobile h2 {
   font-size: 6rem;
+  line-height: 6.5rem;
   margin-bottom: 3rem;
 }
 
@@ -406,6 +409,7 @@ header {
 .treatmentsContent .treatmentsDouble section h3 {
   font-family: var(--fonte-titulos);
   font-size: 2.4rem;
+  line-height: 2.6rem;
   padding-bottom: 2rem;
 }
 
@@ -443,6 +447,7 @@ header {
 
 .clinicLeft h2 {
   font-size: 6rem;
+  line-height: 6.5rem;
   padding-bottom: 4rem;
 }
 
@@ -454,10 +459,11 @@ header {
 
 .clinicLeft button {
   font-family: var(--fonte-button);
+  height: 5.5rem;
   font-size: 1.8rem;
-  padding: 1.5rem 2rem;
+  padding: 0 2rem;
   background: var(--color-yellow);
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   text-transform: uppercase;
   border: none;
   color: var(--color-white);
@@ -512,7 +518,8 @@ header {
 .clinicContentMobile button {
   font-family: var(--fonte-button);
   font-size: 1.8rem;
-  padding: 1.5rem 3rem;
+  height: 5rem;
+  padding: 0 3rem;
   background: var(--color-yellow);
   border-radius: 0.3rem;
   text-transform: uppercase;
@@ -547,6 +554,7 @@ header {
   font-family: var(--fonte-titulos);
   color: var(--color-blue);
   font-size: 5rem;
+  line-height: 5.5rem;
   padding-bottom: 5rem;
 }
 
