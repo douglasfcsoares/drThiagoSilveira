@@ -925,6 +925,11 @@ footer h3 {
   .menu {
     bottom: 0;
     display: none;
+    height: 7rem;
+  }
+
+  header {
+    height: 7rem;
   }
 
   .menuContent,
@@ -955,7 +960,7 @@ footer h3 {
   .logoMobile {
     position: fixed;
     z-index: 1;
-    top: 4rem;
+    top: 3rem;
     left: 5rem;
     display: block;
   }
@@ -964,7 +969,7 @@ footer h3 {
     content: "☰";
     position: fixed;
     z-index: 2;
-    top: 2rem;
+    top: 1rem;
     right: 4rem;
     /* background: var(--primary-color); */
     color: var(--color-blue);
@@ -998,7 +1003,7 @@ footer h3 {
   }
 
   .aboutMobile h2 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 
   .aboutMobile p {
@@ -1007,7 +1012,7 @@ footer h3 {
   }
 
   #aboutColumnCurriculumMobile h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #aboutColumnCurriculumMobile
@@ -1050,8 +1055,8 @@ footer h3 {
 
   #treatments h2 {
     font-family: var(--fonte-bold);
-    font-size: 4rem;
-    padding-bottom: 5rem;
+    font-size: 3rem;
+    padding-bottom: 4.5rem;
   }
 
   .treatmentsContent {
@@ -1083,7 +1088,7 @@ footer h3 {
   }
 
   .treatmentsContent .treatmentsDouble section p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   #clinic {
@@ -1102,11 +1107,11 @@ footer h3 {
   }
 
   .clinicMobile .clinicContentMobile h2 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-family: var(--fonte-bold);
   }
   .clinicMobile .clinicContentMobile p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .clinicMobile .clinicContentMobile iframe {
@@ -1115,11 +1120,11 @@ footer h3 {
   }
 
   .clinicMobile .clinicContentMobile h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .clinicMobile .buttonYellow a img {
-    width: 28rem;
+    width: 22rem;
   }
 
   #comments {
@@ -1166,6 +1171,10 @@ footer h3 {
 
   #comments .commentsContentMobile .galleryWrapper {
     overflow-x: auto;
+  }
+
+  #location {
+    padding-top: 1rem;
   }
 
   /* This is from w3schools */
