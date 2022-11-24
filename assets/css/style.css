@@ -1120,91 +1120,14 @@ footer h3 {
     width: 28rem;
   }
 
+  #comments {
+    padding: 0;
+  }
+
   .commentsContentDesktop {
     display: none;
   }
-
-  .commentsContentMobile {
-    display: block;
-  }
-
-  .commentsContentMobile h2 {
-    text-align: center;
-    font-family: var(--fonte-titulos);
-    color: var(--color-blue);
-    font-size: 4.5rem;
-    line-height: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .commentsContentMobile hr {
-    width: 14rem;
-    height: 0.2rem;
-    color: var(--color-grey);
-    background-color: var(--color-grey);
-    margin: -2rem auto 4rem auto;
-  }
-
-  .commentsContentMobile p {
-    font-size: 1.6;
-    color: var(--color-grey);
-    padding: 1rem 0;
-  }
-
-  .slidesCommentsMobile {
-    display: flex;
-    gap: 10rem;
-    width: 13.4rem;
-  }
-
-  .slideCommentsMobile {
-    width: 44rem;
-    display: flex;
-    gap: 2rem;
-  }
-
-  .commentUnitMobile {
-    width: 50%;
-  }
-
-  .commentUnitMobile p {
-    width: 100%;
-    font-size: 1.5rem;
-    line-height: 120%;
-  }
-
-  .profile {
-    background: red;
-    width: 22rem;
-    display: flex;
-    padding: 2rem 0;
-  }
-
-  .iconProfileGoogle img {
-    width: 9rem;
-  }
-
-  .profileGoogle {
-    margin-left: 2rem;
-  }
-
-  .profileGoogle h4 {
-    font-family: var(--fonte-titulos);
-    font-size: 2rem;
-  }
-
-  .comments-content-mobile .profileGoogle h4 {
-    font-size: 1.6rem;
-  }
-
-  .profileGoogle p {
-    font-size: 1.6rem;
-    padding: 0.5rem;
-  }
-
-  .profileGoogle img {
-    width: 10.5rem;
-  }
+  /* ######################################################### Comments Mobile */
 
   .footerContent {
     flex-direction: column;
@@ -1291,16 +1214,39 @@ footer h3 {
     height: 5rem;
   }
 
-  footer h2 {
+  #contact {
+    padding-top: 6rem;
+  }
+
+  /* footer h2 {
     font-family: var(--fonte-bold);
     font-size: 2.5rem;
     padding: 20px 0;
-  }
+  } */
 
-  footer h3 {
+  /* footer h3 {
     font-family: var(--fonte-titulos);
     font-size: 1.6rem;
     padding: 20px 0;
+  } */
+
+  .footerNav ul li a {
+    font-family: var(--fonte-button);
+  }
+
+  #footerContato h2 {
+    font-family: var(--fonte-bold);
+    font-size: 2rem;
+  }
+
+  #footerContato h3 {
+    font-family: var(--fonte-button);
+    font-size: 1.6rem;
+  }
+
+  #footerContato p {
+    font-family: var(--fonte-menu-texto);
+    text-decoration: none;
   }
 
   #footerContato {
