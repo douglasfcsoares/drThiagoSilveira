@@ -1008,7 +1008,7 @@ footer h3 {
 
   .aboutMobile p {
     font-size: 1.6rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
   }
 
   #aboutColumnCurriculumMobile h3 {
