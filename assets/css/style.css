@@ -1093,7 +1093,7 @@ footer h3 {
 
   #clinic {
     padding-top: 5rem;
-    height: 60rem;
+    height: 52rem;
   }
 
   .clinicDesktop {
@@ -1107,11 +1107,14 @@ footer h3 {
   }
 
   .clinicMobile .clinicContentMobile h2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    text-align: left;
     font-family: var(--fonte-bold);
   }
   .clinicMobile .clinicContentMobile p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    text-align: left;
+    padding-bottom: 2rem;
   }
 
   .clinicMobile .clinicContentMobile iframe {
@@ -1121,6 +1124,7 @@ footer h3 {
 
   .clinicMobile .clinicContentMobile h4 {
     font-size: 1.1rem;
+    padding-bottom: 3rem;
   }
 
   .clinicMobile .buttonYellow a img {
