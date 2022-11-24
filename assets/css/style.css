@@ -437,6 +437,7 @@ header {
 
 #clinic {
   padding: 12rem 0;
+  width: 100%;
   color: var(--color-white);
   height: 65rem;
 }
@@ -1086,10 +1087,8 @@ footer h3 {
   }
 
   #clinic {
+    padding-top: 5rem;
     height: 60rem;
-    max-width: 480px;
-    margin: 0 auto;
-    padding: 6rem 6rem;
   }
 
   .clinicDesktop {
@@ -1097,6 +1096,9 @@ footer h3 {
   }
   .clinicMobile {
     display: flex;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 6rem;
   }
 
   .clinicMobile .clinicContentMobile h2 {
@@ -1126,6 +1128,123 @@ footer h3 {
 
   .commentsContentDesktop {
     display: none;
+  }
+
+  .commentsContentMobile {
+    display: block;
+  }
+
+  .commentsContentMobile h2 {
+    text-align: center;
+    font-family: var(--fonte-titulos);
+    color: var(--color-blue);
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 3rem 0;
+  }
+
+  #comments .commentsContentMobile hr {
+    width: 12rem;
+    height: 0.2rem;
+    color: var(--color-grey);
+    background-color: var(--color-grey);
+    margin: 0.5rem auto 2rem auto;
+  }
+
+  #comments .commentsContentMobile p {
+    font-size: 1.2rem;
+    text-align: left;
+    color: var(--color-dark-grey);
+  }
+
+  #comments .commentsContentMobile .container {
+    max-width: 36rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  #comments .commentsContentMobile .galleryWrapper {
+    overflow-x: auto;
+  }
+
+  /* This is from w3schools */
+  /* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .galleryWrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .galleryWrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  #comments .commentsContentMobile .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 6rem;
+  }
+
+  .control {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+  }
+
+  .arrowRight {
+    left: 55%;
+  }
+
+  .arrowLeft img,
+  .arrowRight img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .item {
+    display: flex;
+    gap: 2rem;
+  }
+
+  #comments .commentsContentMobile .commentUnitMobile {
+    width: 16rem;
+    flex-shrink: 0;
+  }
+
+  .commentUnitMobile p {
+    font-size: 1.4rem;
+  }
+
+  .container .item .commentUnitMobile .profile {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  #comments .commentsContentMobile .iconProfileGoogle img {
+    width: 5rem;
+  }
+
+  .container .item .commentUnitMobile .profile .profileGoogle {
+    margin-left: 0.5rem;
+  }
+  .container .item .commentUnitMobile .profile .profileGoogle img {
+    width: 7rem;
+  }
+
+  .container .item .commentUnitMobile .profile .profileGoogle h4 {
+    font-family: var(--fonte-titulos);
+    font-size: 1.3rem;
   }
   /* ######################################################### Comments Mobile */
 
