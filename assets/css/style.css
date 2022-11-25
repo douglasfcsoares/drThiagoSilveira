@@ -215,7 +215,7 @@ header {
 }
 
 .buttonYellow {
-  width: 18rem;
+  width: 38rem;
   background: rgba(0, 0, 0, 0);
   border: 0;
   transition: 0.5s;
@@ -844,6 +844,9 @@ footer h3 {
     font-size: 2.5rem;
     margin-bottom: 6rem;
   }
+  .buttonYellow {
+    width: 32rem;
+  }
 
   .buttonYellow a img {
     width: 32rem;
@@ -868,12 +871,16 @@ footer h3 {
     margin-bottom: 6rem;
   }
 
+  .buttonYellow {
+    width: 28rem;
+  }
+
   .buttonYellow a img {
     width: 28rem;
   }
 
   .clinicDesktop .buttonYellow a img {
-    width: 34rem;
+    width: 28rem;
   }
 }
 
@@ -1127,6 +1134,10 @@ footer h3 {
     padding-bottom: 3rem;
   }
 
+  .buttonYellow {
+    width: 22rem;
+  }
+
   .clinicMobile .buttonYellow a img {
     width: 22rem;
   }
@@ -1290,13 +1301,13 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     margin-bottom: 6rem;
   }
 
-  .buttonYellow {
+  /* .buttonYellow {
     height: 4.5rem;
   }
 
   .buttonYellow a {
     font-size: 1.7rem;
-  }
+  } */
 
   .headLineMobile #whatsapp {
     width: 8rem;
@@ -1331,6 +1342,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   .headLineMobile p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
+  }
+
+  .buttonYellow {
+    width: 18rem;
   }
 
   .buttonYellow a img {
