@@ -93,6 +93,11 @@ h5 {
   font-family: var(--fonte-titulos);
 }
 
+#inicio {
+  width: 100%;
+  height: 9rem;
+  background: red;
+}
 header {
   position: fixed;
   top: 0;
@@ -189,7 +194,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 10rem;
+  margin-top: 0;
   /* height: 100%; */
 }
 
@@ -201,8 +206,8 @@ header {
 }
 
 .headLine h1 {
-  font-family: var(--fonte-titulos);
-  font-size: 7.6rem;
+  font-family: var(--fonte-button);
+  font-size: 7.7rem;
   line-height: 120%;
   margin-bottom: 3rem;
 }
@@ -248,6 +253,7 @@ header {
   bottom: 13rem;
   width: 10rem;
   height: 10rem;
+  z-index: 5;
 }
 
 .headLine #whatsapp img {
@@ -833,6 +839,8 @@ footer h3 {
     padding: 0 0 15rem 15rem;
     color: var(--color-white);
     height: fit-content;
+    margin-top: -3rem;
+
   }
 
   .headLine h1 {
@@ -842,7 +850,7 @@ footer h3 {
 
   .headLine p {
     font-size: 2.5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
   }
   .buttonYellow {
     width: 32rem;
@@ -856,19 +864,19 @@ footer h3 {
 @media (max-width: 1440px) {
   .headLine {
     width: 60vw;
-    padding: 0 0 12rem 13rem;
+    padding: 0 0 15rem 13rem;
     color: var(--color-white);
     height: fit-content;
   }
 
   .headLine h1 {
     font-size: 5.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .headLine p {
     font-size: 2.3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   .buttonYellow {
@@ -885,12 +893,15 @@ footer h3 {
 }
 
 @media (max-width: 1050px) {
+  #inicio {
+    height: 7rem;
+  }
   .bannerPrincipal {
     background-image: url("../img/banner-mobile01.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 6rem;
+    margin-top: 0rem;
     height: 100rem;
   }
 
