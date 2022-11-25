@@ -96,8 +96,8 @@ h5 {
 #inicio {
   width: 100%;
   height: 9rem;
-  background: red;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -108,7 +108,7 @@ header {
 }
 
 #home {
-  padding-top: 12rem;
+  padding-top: 11rem;
 }
 
 #about,
@@ -207,7 +207,7 @@ header {
 
 .headLine h1 {
   font-family: var(--fonte-button);
-  font-size: 7.7rem;
+  font-size: 7.6rem;
   line-height: 120%;
   margin-bottom: 3rem;
 }
@@ -229,23 +229,6 @@ header {
 .buttonYellow a img {
   width: 38rem;
 }
-
-/* .buttonYellow a img:hover {
-  margin-top: -1rem;
-} */
-
-/* .buttonYellow a {
-  font-size: 2.4rem;
-  padding: 1rem 2.2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--color-white);
-} */
-
-/* .headLine button a {
-  text-decoration: none;
-  color: var(--color-white);
-} */
 
 .headLine #whatsapp {
   position: fixed;
@@ -297,7 +280,8 @@ header {
 }
 
 #aboutColumnRight h2 {
-  font-size: 6rem;
+  font-size: 5rem;
+  font-family: var(--fonte-button);
   line-height: 6.5rem;
   margin-bottom: 3rem;
 }
@@ -398,7 +382,7 @@ header {
 
 #treatments h2 {
   color: var(--color-blue);
-  font-family: var(--fonte-titulos);
+  font-family: var(--fonte-button);
   font-size: 6rem;
 }
 
@@ -539,7 +523,7 @@ header {
 
 .commentsContentDesktop h2 {
   text-align: center;
-  font-family: var(--fonte-titulos);
+  font-family: var(--fonte-button);
   color: var(--color-blue);
   font-size: 5rem;
   line-height: 5.5rem;
@@ -551,7 +535,7 @@ header {
   height: 0.2rem;
   color: var(--color-grey);
   background-color: var(--color-grey);
-  margin: -2rem auto 4rem auto;
+  margin: -3rem auto 4rem auto;
 }
 
 .commentsContentDesktop p {
