@@ -524,12 +524,12 @@ header {
   margin: 0 auto;
 }
 
-.comments-content-mobile {
+/* .comments-content-mobile {
   max-width: 48rem;
   padding-bottom: 5rem;
   margin: 0 auto;
   display: none;
-}
+} */
 
 .commentsContentDesktop h2 {
   text-align: center;
@@ -583,9 +583,9 @@ header {
   font-size: 2rem;
 }
 
-.comments-content-mobile .profileGoogle h4 {
+/* .comments-content-mobile .profileGoogle h4 {
   font-size: 1.6rem;
-}
+} */
 
 .profileGoogle p {
   font-size: 1.6rem;
@@ -1168,7 +1168,7 @@ footer h3 {
 
   #comments .commentsContentMobile .container {
     max-width: 36rem;
-    padding-top: 2rem;
+    padding-top: 0;
     padding-bottom: 0;
     position: relative;
   }
@@ -1198,7 +1198,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   #comments .commentsContentMobile .gallery {
     display: flex;
     flex-flow: row nowrap;
-    gap: 6rem;
+    gap: 5rem;
   }
 
   .control {

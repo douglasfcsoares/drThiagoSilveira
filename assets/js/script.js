@@ -4,7 +4,7 @@ const items = document.querySelectorAll(".item")
 const maxItems = items.length
 
 controls.forEach(control => {
-  control.addEventListener("click", e => {
+  control.addEventListener("click", (e) => {
     isLeft = e.target.classList.contains("arrowLeft")
 
     if (isLeft) {
