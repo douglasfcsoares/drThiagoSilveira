@@ -1407,6 +1407,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   }
 
   #footerLocation h2 {
+    font-size: 2rem;
     font-family: var(--fonte-bold);
     padding: 0 0 1.8rem 0;
   }
