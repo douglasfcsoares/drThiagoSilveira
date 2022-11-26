@@ -25,6 +25,7 @@
 .headLineMobile,
 .aboutMobile,
 .commentsContentMobile,
+.treatmentsContentMobile,
 .clinicMobile {
   display: none;
 }
@@ -195,6 +196,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0;
+  width: 100%;
   /* height: 100%; */
 }
 
@@ -797,11 +799,11 @@ footer h3 {
   background-color: var(--color-grey);
 }
 
-#radio3:checked ~ .navigationAuto .autoBtn3 {
+#radio3:checked ~ .navigationAutoMobile .autoBtn3 {
   background-color: var(--color-grey);
 }
 
-#radio4:checked ~ .navigationAuto .autoBtn4 {
+#radio4:checked ~ .navigationAutoMobile .autoBtn4 {
   background-color: var(--color-grey);
 }
 
@@ -886,6 +888,7 @@ footer h3 {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0rem;
+    width: 100vw;
     height: 100rem;
   }
 
@@ -904,6 +907,7 @@ footer h3 {
   .headLineMobile h1 {
     font-size: 5.5rem;
     margin-bottom: 3rem;
+    font-family: var(--fonte-button);
   }
 
   .headLineMobile p {
@@ -997,7 +1001,7 @@ footer h3 {
   }
 
   #about {
-    padding-top: 0;
+    padding-top: 4rem;
   }
 
   .aboutMobile {
@@ -1049,10 +1053,32 @@ footer h3 {
     font-family: var(--fonte-bold);
   }
 
+  .manualBtn,
+  .manualBtnMobile {
+    border: 0.2rem solid var(--color-grey);
+    width: 0.4rem;
+    height: 0.4rem;
+    padding: 0.4rem;
+    border-radius: .6rem;
+  }
+
+  .navigationAuto div,
+  .navigationAutoMobile div {
+    border: 0.2rem solid var(--color-grey);
+    margin-bottom: -0.17rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    padding: 0.4rem;
+    border-radius: .6rem;
+  }
+  .manual-btn-mobile {
+    width: 1.2rem;
+  }
+
   #treatments {
     max-width: 480px;
     margin: 0 auto;
-    padding: 6rem 6rem;
+    padding: 9rem 5rem 5rem 6rem;
   }
 
   #treatments h2 {
@@ -1062,40 +1088,51 @@ footer h3 {
   }
 
   .treatmentsContent {
+    display: none;
     width: 100%;
     padding-top: 2rem;
     flex-direction: column;
     align-items: center;
   }
 
-  .treatmentsDouble {
-    gap: 1.6rem;
+  .treatmentsContentMobile {
+    display: block;
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .treatmentsContentMobile .treatmentsDouble {
+    padding-bottom: 2rem;
     width: 100%;
   }
-  .treatmentsDouble section {
+    .treatmentsContentMobile .treatmentsDouble section {
     width: 100%;
   }
 
-  .treatmentsContent .treatmentsDouble section h3 {
-    font-family: var(--fonte-bold);
-    width: 100%;
+  .treatmentsContentMobile  .treatmentsDouble section h3 {
+  font-family: var(--fonte-bold);
+  padding-bottom: 1rem;
+  width: 100%;
   }
 
-  .treatmentsContent .treatmentsDouble section img {
-    width: 6.5rem;
+  .treatmentsContentMobile .treatmentsDouble section img {
+    width: 6rem;
+    padding-bottom: 1rem;
   }
 
-  .treatmentsContent .treatmentsDouble section h3 {
-    font-size: 1.6rem;
+  .treatmentsContentMobile .treatmentsDouble section h3 {
+    font-size: 1.3rem;
   }
 
-  .treatmentsContent .treatmentsDouble section p {
-    font-size: 1.2rem;
+  .treatmentsContentMobile .treatmentsDouble section p {
+    font-size: 1.1rem;
+    font-family: var(--fonte-menu-texto);
+    color: var(--color-grey);
   }
 
   #clinic {
-    padding-top: 5rem;
-    height: 52rem;
+    padding-top: 9rem;
+    height: 58rem;
   }
 
   .clinicDesktop {
@@ -1133,12 +1170,17 @@ footer h3 {
     width: 22rem;
   }
 
+    .clinicMobile .buttonYellow {
+      width: 28rem;
+      text-align: left;
+    }
+
   .clinicMobile .buttonYellow a img {
     width: 22rem;
   }
 
   #comments {
-    padding: 0;
+    padding: 6rem 0 0 0;
   }
 
   .commentsContentDesktop {
@@ -1151,7 +1193,7 @@ footer h3 {
 
   .commentsContentMobile h2 {
     text-align: center;
-    font-family: var(--fonte-titulos);
+    font-family: var(--fonte-button);
     color: var(--color-blue);
     font-size: 3.2rem;
     line-height: 4rem;
@@ -1163,7 +1205,7 @@ footer h3 {
     height: 0.2rem;
     color: var(--color-grey);
     background-color: var(--color-grey);
-    margin: 0.5rem auto 2rem auto;
+    margin: -2rem auto 2rem auto;
   }
 
   #comments .commentsContentMobile p {
@@ -1325,22 +1367,27 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   }
 
   .bannerPrincipal {
+    background-position: right;
+    width: 100%;
     height: 46rem;
+    /* height: 100%; */
   }
 
   .headLineMobile {
-    margin-top: -5rem;
-    padding: 0 0 12rem 6rem;
+    margin-top: -7rem;
+    padding: 0 0 12rem 5rem;
   }
 
   .headLineMobile h1 {
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    line-height: 110%;
   }
 
   .headLineMobile p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
+    line-height: 120%;
   }
 
   .buttonYellow {
@@ -1364,7 +1411,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   }
 
   #contact {
-    padding-top: 12rem;
+    padding-top: 10rem;
   }
 
   /* footer h2 {
