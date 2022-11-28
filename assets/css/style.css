@@ -814,12 +814,22 @@ footer h3 {
   transition: 0.4s;
 }
 
+.autoBtn1,.autoBtn5,
+.autoBtn3 {
+  background-color: var(--color-grey);
+}
+
+
 #radio1:checked ~ .navigationAuto .autoBtn1 {
   background-color: var(--color-grey);
 }
 
 #radio2:checked ~ .navigationAuto .autoBtn2 {
   background-color: var(--color-grey);
+}
+
+#radio2:checked~.navigationAuto .autoBtn1 {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #radio3:checked ~ .navigationAutoMobile .autoBtn3 {
@@ -830,12 +840,20 @@ footer h3 {
   background-color: var(--color-grey);
 }
 
+#radio4:checked~.navigationAuto .autoBtn3 {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 #radio5:checked ~ .navigationAuto .autoBtn5 {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-grey);
 }
 
 #radio6:checked ~ .navigationAuto .autoBtn6 {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-grey);
+}
+
+#radio6:checked~.navigationAuto .autoBtn5 {
+  background: rgba(0, 0, 0, 0);
 }
 
 /* ######################################################## END SLIDE */
