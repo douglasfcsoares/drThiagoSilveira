@@ -1144,7 +1144,7 @@ footer h3 {
   }
 
   .treatmentsContentMobile .treatmentsDouble section p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: var(--fonte-menu-texto);
     color: var(--color-grey);
   }
@@ -1329,7 +1329,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   .item {
     max-width: 36.4rem;
     width: 100%;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     display: flex;
     gap: .5rem;
     flex-shrink: 0;
@@ -1455,14 +1455,14 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
   .headLineMobile h1 {
     font-size: 3.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 110%;
   }
 
   .headLineMobile p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
-    line-height: 120%;
+    line-height: 125%;
   }
 
   .buttonYellow {
@@ -1520,16 +1520,23 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     text-decoration: none;
   }
 
+  -webkit-#footerContato p {
+    font-family: var(--fonte-menu-texto);
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
   #footerContato {
     padding: 2rem 0;
   }
+
 
   #footerLocation {
     padding: 1rem 0;
   }
 
   #footerLocation h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: var(--fonte-bold);
     padding: 0 0 1.8rem 0;
   }
