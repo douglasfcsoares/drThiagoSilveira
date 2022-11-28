@@ -1,6 +1,7 @@
 const controls = document.querySelectorAll(".control")
 let currentItem = 0
 const items = document.querySelectorAll(".item")
+const balls = document.querySelectorAll(".ball")
 const maxItems = items.length
 
 controls.forEach(control => {
@@ -22,6 +23,7 @@ controls.forEach(control => {
     }
 
     items.forEach(item => item.classList.remove("current-item"))
+    balls.forEach(ball => ball.classList.remove("atual"))
 
     items[currentItem].scrollIntoView({
      // behavior: "smooth",
@@ -29,5 +31,6 @@ controls.forEach(control => {
     })
 
     items[currentItem].classList.add("current-item")
+    balls[currentItem].classList.add("atual")
   })
 })
