@@ -1065,7 +1065,7 @@ footer h3 {
   .navigationAuto div,
   .navigationAutoMobile div {
     border: 0.2rem solid var(--color-grey);
-    margin-bottom: -0.17rem;
+    margin-bottom: -0.3rem;
     width: 0.4rem;
     height: 0.4rem;
     padding: 0.4rem;
@@ -1225,10 +1225,7 @@ footer h3 {
     overflow-x: auto;
   }
 
-  #location {
-    padding-top: 1rem;
-  }
-
+ 
   /* This is from w3schools */
   /* 
 https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
@@ -1308,6 +1305,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     font-size: 1.3rem;
   }
   /* ######################################################### Comments Mobile */
+
+  #location {
+    padding-top: 1rem;
+  }
 
   .footerContent {
     flex-direction: column;
