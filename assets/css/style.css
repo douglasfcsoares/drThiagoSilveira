@@ -1143,11 +1143,18 @@ footer h3 {
     font-size: 1.3rem;
   }
 
+  -webkit-.treatmentsContentMobile .treatmentsDouble section p {
+    font-size: 1rem;
+    font-family: var(--fonte-menu-texto);
+    color: var(--color-grey);
+  }
+
   .treatmentsContentMobile .treatmentsDouble section p {
     font-size: 1rem;
     font-family: var(--fonte-menu-texto);
     color: var(--color-grey);
   }
+
 
   #clinic {
     padding-top: 9rem;
@@ -1515,14 +1522,15 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     font-size: 1.6rem;
   }
 
-  #footerContato p {
-    font-family: var(--fonte-menu-texto);
-    text-decoration: none;
-  }
 
   -webkit-#footerContato p {
     font-family: var(--fonte-menu-texto);
     color: var(--color-white);
+    text-decoration: none;
+  }
+
+  #footerContato p {
+    font-family: var(--fonte-menu-texto);
     text-decoration: none;
   }
 
