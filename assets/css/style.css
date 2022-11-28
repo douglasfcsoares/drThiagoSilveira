@@ -268,7 +268,7 @@ header {
   padding-top: 5rem;
   padding-bottom: 10rem;
   display: flex;
-  gap: 4rem;
+  gap: 6rem;
   color: var(--color-white);
 }
 
@@ -324,7 +324,7 @@ header {
 }
 
 #aboutColumnRight .slide ul li span strong {
-  font-family: var(--fonte-titulos);
+  font-family: var(--fonte-bold);
 }
 
 .mainContentMobile h2 {
@@ -396,13 +396,14 @@ header {
   color: var(--color-blue);
   font-family: var(--fonte-button);
   font-size: 6rem;
+  padding-bottom: 5rem;
 }
 
 .treatmentsContent {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 10rem;
-  gap: 2rem;
+  padding-top: 4rem;
+  gap: 1rem;
 }
 
 .treatmentsDouble {
@@ -429,7 +430,8 @@ header {
 
 .treatmentsContent .treatmentsDouble section p {
   font-family: var(--fonte-menu-texto);
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 130%;
   color: var(--color-grey);
 }
 
@@ -464,13 +466,14 @@ header {
 .clinicLeft h2 {
   font-size: 6rem;
   line-height: 6.5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
+  font-family: var(--fonte-button);
 }
 
 .clinicLeft p {
   font-size: 2.5rem;
   line-height: 130%;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 
 .clinicRight h4 {
@@ -550,11 +553,11 @@ header {
   margin: -3rem auto 4rem auto;
 }
 
-.commentsContentDesktop p {
+/* .commentsContentDesktop p {
   font-size: 1.6;
   color: var(--color-grey);
   padding: 1rem 0;
-}
+} */
 
 .commentUnit {
   max-width: 33%;
@@ -562,8 +565,8 @@ header {
 }
 
 .commentUnit p {
-  max-width: 80%;
-  font-size: 2rem;
+  max-width: 90%;
+  font-size: 1.8rem;
   line-height: 120%;
 }
 
@@ -668,6 +671,7 @@ footer h3 {
 #footerLocation p {
   font-family: var(--fonte-menu-texto);
   padding: 1.8rem 0;
+  line-height: 140%;
 }
 
 /* ######################################################## END FOOTER */
@@ -827,11 +831,11 @@ footer h3 {
 }
 
 #radio5:checked ~ .navigationAuto .autoBtn5 {
-  background-color: var(--color-grey);
+  background-color: var(--color-dark-grey);
 }
 
 #radio6:checked ~ .navigationAuto .autoBtn6 {
-  background-color: var(--color-grey);
+  background-color: var(--color-dark-grey);
 }
 
 /* ######################################################## END SLIDE */
