@@ -230,6 +230,11 @@ header {
 
 .buttonYellow a img {
   width: 38rem;
+  transition: all 0.4s;
+}
+
+.buttonYellow a img:hover {
+  transform: scale(1.2);
 }
 
 .headLine #whatsapp {
@@ -244,6 +249,11 @@ header {
 .headLine #whatsapp img {
   width: 10rem;
   height: 10rem;
+  transition: all 0.4s;
+}
+
+.headLine #whatsapp img:hover {
+ transform: scale(1.2);
 }
 
 /* ######################################################## END HOME */
@@ -721,6 +731,7 @@ footer h3 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  
 }
 
 .manualBtn,
@@ -732,6 +743,14 @@ footer h3 {
   border-radius: 1rem;
   cursor: pointer;
   transition: 0.4s;
+}
+
+.manual-btn img {
+  transition: all 0.4s;
+}
+
+.manual-btn img:hover {
+  transform: scale(1.2);
 }
 
 .manual-btn-mobile {
@@ -1215,14 +1234,27 @@ footer h3 {
   }
 
   #comments .commentsContentMobile .container {
-    max-width: 36rem;
+    max-width: 36.4rem;
+    width: 100%;
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
+    overflow: hidden;
   }
 
-  #comments .commentsContentMobile .galleryWrapper {
+  /* #comments .commentsContentMobile .galleryWrapper {
     overflow-x: auto;
+    max-width: 36.4rem;
+    width: 100%;
+  } */
+
+  #comments .commentsContentMobile .gallery {
+    overflow-x: auto;
+    max-width: 109.2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .1rem;
   }
 
  
@@ -1230,20 +1262,14 @@ footer h3 {
   /* 
 https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   /* Hide scrollbar for Chrome, Safari and Opera */
-  .galleryWrapper::-webkit-scrollbar {
+  .gallery::-webkit-scrollbar {
     display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
-  .galleryWrapper {
+  .gallery {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-  }
-
-  #comments .commentsContentMobile .gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 5rem;
   }
 
   .control {
@@ -1264,29 +1290,67 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
   .arrowLeft img,
   .arrowRight img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    transition: all 0.4s;
+  }
+
+  .arrowLeft img:hover,
+  .arrowRight img:hover {
+    transform: scale(1.5);
+  }
+
+  .balls {
+    position: absolute;
+    width: 36.4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -1.6rem;
+    margin-left: -.6rem;
+    background: red;
+  }
+  .balls div {
+    transition: all 0.4s;
+    border: .2rem solid var(--color-grey);
+    padding: .3rem;
+    border-radius: 50%;
+    margin-right: .8rem;
+    cursor: pointer;
+  }
+
+  .balls div:hover {
+    background: var(--color-dark-grey);
   }
 
   .item {
+    max-width: 36.4rem;
+    width: 100%;
+    padding-left: 1rem;
     display: flex;
-    gap: 2rem;
+    gap: .5rem;
+    flex-shrink: 0;
+    
   }
 
   #comments .commentsContentMobile .commentUnitMobile {
-    width: 16rem;
+    max-width: 17rem;
     flex-shrink: 0;
   }
 
-  .commentUnitMobile p {
-    font-size: 1.4rem;
-  }
+  
 
   .container .item .commentUnitMobile .profile {
     display: flex;
-    gap: 0.5rem;
     align-items: center;
     padding-bottom: 1rem;
+  }
+
+  .container .item .commentUnitMobile .textComment {
+    width: 90%;
+  }
+
+  .commentUnitMobile .textComment p {
+    font-size: 1rem;
   }
 
   #comments .commentsContentMobile .iconProfileGoogle img {
@@ -1296,13 +1360,18 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   .container .item .commentUnitMobile .profile .profileGoogle {
     margin-left: 0.5rem;
   }
-  .container .item .commentUnitMobile .profile .profileGoogle img {
-    width: 7rem;
-  }
-
+  
   .container .item .commentUnitMobile .profile .profileGoogle h4 {
     font-family: var(--fonte-titulos);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  #comments .commentsContentMobile .container .galleryWrapper .gallery .item .commentUnitMobile .profile .profileGoogle p {
+    font-size: 1rem;
+  }
+
+  .container .item .commentUnitMobile .profile .profileGoogle img {
+    width: 6rem;
   }
   /* ######################################################### Comments Mobile */
 

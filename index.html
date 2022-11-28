@@ -1031,15 +1031,19 @@
         <h2>O que dizem os<br />nossos pacientes?</h2>
         <hr />
 
-        <div class="container">
-          <button class="arrowLeft control" aria-label="previous image">
+        <div class="container slide">
+          <button
+            class="arrowLeft control"
+            id="previous"
+            aria-label="previous image"
+          >
             <img src="./assets/img/icons/icon-arrow-left.svg" />
           </button>
-          <button class="arrowRight control" aria-label="next image">
+          <button class="arrowRight control" id="next" aria-label="next image">
             <img src="./assets/img/icons/icon-arrow-right.svg" />
           </button>
           <div class="galleryWrapper">
-            <div class="gallery">
+            <div class="gallery slides">
               <div class="current-item item">
                 <div class="commentUnitMobile">
                   <section class="profile">
@@ -1052,19 +1056,22 @@
                       <img src="./assets/img/icons/icon-stars.svg" alt="" />
                     </div>
                   </section>
-                  <p>
-                    Sem dúvidas indico o atendimento do Dr. Thiago, pois ele e
-                    toda sua equipe contribuíram muito para o atingimento da
-                    minha meta de emagrecimento saudável. Desde o início nas
-                    primeiras consultas fui atendido com excelência, sempre
-                    tendo a informação necessária para entender o processo de
-                    emagrecimento proposto, o que facilitou no meu engajamento.
-                    Também percebo que o Dr. Thiago é um profissional em
-                    constante evolução e busca se aprimorar com cursos e
-                    mentorias frequentes, o que me faz acreditar que suas
-                    propostas são sempre baseadas nos mais evoluídos e atuais
-                    estudos.
-                  </p>
+                  <section class="textComment">
+                    <p>
+                      Sem dúvidas indico o atendimento do Dr. Thiago, pois ele e
+                      toda sua equipe contribuíram muito para o atingimento da
+                      minha meta de emagrecimento saudável. Desde o início nas
+                      primeiras consultas fui atendido com excelência, sempre
+                      tendo a informação necessária para entender o processo de
+                      emagrecimento proposto, o que facilitou no meu
+                      engajamento. Também percebo que o Dr. Thiago é um
+                      profissional em constante evolução e busca se aprimorar
+                      com cursos e mentorias frequentes, o que me faz acreditar
+                      que suas propostas são sempre baseadas nos mais evoluídos
+                      e atuais estudos.
+                    </p>
+                  </section>
+
                   <!--Fim-commentUnitMobile-->
                 </div>
 
@@ -1079,17 +1086,20 @@
                       <img src="./assets/img/icons/icon-stars.svg" alt="" />
                     </div>
                   </section>
-                  <p>
-                    Estou muito satisfeita com o tratamento e acompanhamento que
-                    venho realizando com o Dr. Thiago Silveira. Desde o início
-                    do tratamento, o Dr. Thiago solucionou minhas dúvidas, me
-                    deixando tranquila quanto ao tratamento e as próximas
-                    etapas. Em 4 meses de tratamento, observei uma melhora
-                    significativa no meu peso e saúde, em geral. Episódios
-                    diários como crises de rinite e dores nas articulações,
-                    desapareceram. Seguimos em tratamento. Excelente
-                    profissional.
-                  </p>
+                  <section class="textComment">
+                    <p>
+                      Estou muito satisfeita com o tratamento e acompanhamento
+                      que venho realizando com o Dr. Thiago Silveira. Desde o
+                      início do tratamento, o Dr. Thiago solucionou minhas
+                      dúvidas, me deixando tranquila quanto ao tratamento e as
+                      próximas etapas. Em 4 meses de tratamento, observei uma
+                      melhora significativa no meu peso e saúde, em geral.
+                      Episódios diários como crises de rinite e dores nas
+                      articulações, desapareceram. Seguimos em tratamento.
+                      Excelente profissional.
+                    </p>
+                  </section>
+
                   <!--Fim-commentUnitMobile-->
                 </div>
               </div>
@@ -1106,13 +1116,16 @@
                       <img src="./assets/img/icons/icon-stars.svg" alt="" />
                     </div>
                   </section>
-                  <p>
-                    Agradeço a Deus diariamente por ter conhecido Dr Thiago
-                    Silveira, Grande Médico, atencioso, competente, realmente
-                    conhece sobre medicina integrativa. Minha vida e da minha
-                    família mudou 100% pra melhor, sem medicamentos, apenas
-                    suplementando o que estava com déficit. Recomendo mil vezes.
-                  </p>
+                  <section class="textComment">
+                    <p>
+                      Agradeço a Deus diariamente por ter conhecido Dr Thiago
+                      Silveira, Grande Médico, atencioso, competente, realmente
+                      conhece sobre medicina integrativa. Minha vida e da minha
+                      família mudou 100% pra melhor, sem medicamentos, apenas
+                      suplementando o que estava com déficit. Recomendo mil
+                      vezes.
+                    </p>
+                  </section>
                   <!--Fim-commentUnitMobile-->
                 </div>
 
@@ -1127,20 +1140,25 @@
                       <img src="./assets/img/icons/icon-stars.svg" alt="" />
                     </div>
                   </section>
-                  <p>
-                    Olá, gostaria de agradecer pelo atendimento e atenção da
-                    equipe e do Dr.Thiago! Comecei o tratamento passado por ele,
-                    fiz todos os exames solicitados e a suplementação de forma
-                    correta... só posso dizer que melhorei muito e ainda estou
-                    no processo, mas as diferenças já estão nítidas, voltei ao
-                    peso normal, parou a queda de cabelo e o cansaço extremo que
-                    tinha, as dores de estômago também não tenho mais como
-                    antes... enfim só progresso e voltei a treinar na academia!
-                    Obrigado a todos! Se todos os médicos fossem como o Dr
-                    Thiago, a saúde das pessoas estaria bem melhor! Mudei tudo
-                    sem medicação, somente com a suplementação correta e estilo
-                    de vida! Obrigado!!!
-                  </p>
+                  <section class="textComment">
+                    <section>
+                      <p>
+                        Olá, gostaria de agradecer pelo atendimento e atenção da
+                        equipe e do Dr.Thiago! Comecei o tratamento passado por
+                        ele, fiz todos os exames solicitados e a suplementação
+                        de forma correta... só posso dizer que melhorei muito e
+                        ainda estou no processo, mas as diferenças já estão
+                        nítidas, voltei ao peso normal, parou a queda de cabelo
+                        e o cansaço extremo que tinha, as dores de estômago
+                        também não tenho mais como antes... enfim só progresso e
+                        voltei a treinar na academia! Obrigado a todos! Se todos
+                        os médicos fossem como o Dr Thiago, a saúde das pessoas
+                        estaria bem melhor! Mudei tudo sem medicação, somente
+                        com a suplementação correta e estilo de vida!
+                        Obrigado!!!
+                      </p>
+                    </section>
+                  </section>
                   <!--Fim-commentUnitMobile-->
                 </div>
               </div>
@@ -1157,15 +1175,17 @@
                       <img src="./assets/img/icons/icon-stars.svg" alt="" />
                     </div>
                   </section>
-                  <p>
-                    O atendimento despendido tanto pelas colaboradoras da
-                    clínica como pelo Dr. Thiago está sendo excepcional. Um
-                    cuidado único com a saúde do paciente como um todo. Sinto-me
-                    extremamente grata por toda a atenção e cuidado.
-                    Recomendarei sempre para todos aqueles que, como eu,
-                    consideram a medicina integrativa e preventiva a melhor
-                    opção para se obter qualidade de vida!
-                  </p>
+                  <section class="textComment">
+                    <p>
+                      O atendimento despendido tanto pelas colaboradoras da
+                      clínica como pelo Dr. Thiago está sendo excepcional. Um
+                      cuidado único com a saúde do paciente como um todo.
+                      Sinto-me extremamente grata por toda a atenção e cuidado.
+                      Recomendarei sempre para todos aqueles que, como eu,
+                      consideram a medicina integrativa e preventiva a melhor
+                      opção para se obter qualidade de vida!
+                    </p>
+                  </section>
                   <!--Fim-commentUnitMobile-->
                 </div>
 
@@ -1180,26 +1200,33 @@
                       <img src="./assets/img/icons/icon-stars.svg" alt="" />
                     </div>
                   </section>
-                  <p>
-                    Eu quero agradecer imensamente o cuidado Ortomolecular que o
-                    Dr Thiago Silveira prestou ao meu pai, eu e toda a minha
-                    família estamos extremamente gratos. Um excelente médico,
-                    carinhoso e super prestativo, tanto na consulta como na pós
-                    consulta. Tenho a certeza de que estamos em excelentes mãos.
-                    A indicação veio de uma amiga que estava em um tratamento de
-                    câncer de mama, por sinal muito agressivo e teve a sua saúde
-                    restaurada. O meu pai não tinha nem forças mais para falar
-                    totalmente debilitado, pois sofre de um problema no esôfago
-                    chamado de mega esôfago. Assim que deu início ao tratamento
-                    ele está mais ativo e pronto para receber os procedimentos
-                    necessários para ter uma melhor qualidade de vida. Deus
-                    abençoe sempre Dr. Thiago Deus te capacitou para ser um anjo
-                    aqui na terra.
-                  </p>
+                  <section class="textComment">
+                    <p>
+                      Eu quero agradecer imensamente o cuidado Ortomolecular que
+                      o Dr Thiago Silveira prestou ao meu pai, eu e toda a minha
+                      família estamos extremamente gratos. Um excelente médico,
+                      carinhoso e super prestativo, tanto na consulta como na
+                      pós consulta. Tenho a certeza de que estamos em excelentes
+                      mãos. A indicação veio de uma amiga que estava em um
+                      tratamento de câncer de mama, por sinal muito agressivo e
+                      teve a sua saúde restaurada. O meu pai não tinha nem
+                      forças mais para falar totalmente debilitado, pois sofre
+                      de um problema no esôfago chamado de mega esôfago. Assim
+                      que deu início ao tratamento ele está mais ativo e pronto
+                      para receber os procedimentos necessários para ter uma
+                      melhor qualidade de vida. Deus abençoe sempre Dr. Thiago
+                      Deus te capacitou para ser um anjo aqui na terra.
+                    </p>
+                  </section>
                   <!--Fim-commentUnitMobile-->
                 </div>
               </div>
             </div>
+          </div>
+          <div class="balls">
+            <div class="current-item" id="0"></div>
+            <div id="1"></div>
+            <div id="2"></div>
           </div>
         </div>
 
