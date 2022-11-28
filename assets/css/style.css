@@ -1329,7 +1329,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   .item {
     max-width: 36.4rem;
     width: 100%;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     display: flex;
     gap: .5rem;
     flex-shrink: 0;
@@ -1337,7 +1337,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   }
 
   #comments .commentsContentMobile .commentUnitMobile {
-    max-width: 17rem;
+    max-width: 16rem;
+    width: 100%;
     flex-shrink: 0;
   }
 
