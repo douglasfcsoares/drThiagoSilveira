@@ -201,12 +201,30 @@ header {
 }
 
 .bannerPrincipalEmagrecimento {
-  background-image: url("../img/bannerEmagrecimento.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0;
-    width: 100%;
+  background-image: url("../img/bannerEmagrecimento.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
+}
+
+.bannerPrincipalVitalidade {
+  background-image: url("../img/bannerVitalidade.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
+}
+
+.bannerPrincipalreposicao {
+  background-image: url("../img/bannerReposicao.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
 }
 
 .headLine {
@@ -943,7 +961,25 @@ footer h3 {
   }
 
   .bannerPrincipalEmagrecimento {
-    background-image: url("../img/bannerEmagrecimentoMobile.svg");
+    background-image: url("../img/bannerEmagrecimentoMobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .bannerPrincipalVitalidade {
+  background-image: url("../img/bannerVitalidadeMobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  width: 100%;
+  }
+
+  .bannerPrincipalreposicao {
+    background-image: url("../img/bannerReposicaoMobile.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1445,7 +1481,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   .logo img {
     width: 15rem;
   }
-  .bannerPrincipal, .bannerPrincipalEmagrecimento {
+  .bannerPrincipal,
+  .bannerPrincipalEmagrecimento,
+  .bannerPrincipalVitalidade,
+  .bannerPrincipalreposicao {
     height: 66rem;
   }
 
@@ -1488,7 +1527,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     width: 15rem;
   }
 
-  .bannerPrincipal, .bannerPrincipalEmagrecimento {
+  .bannerPrincipal {
     background-position: right;
     width: 100%;
     height: 46rem;
@@ -1496,7 +1535,9 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   }
 
 
-  .bannerPrincipalEmagrecimento {
+  .bannerPrincipalEmagrecimento,
+  .bannerPrincipalVitalidade,
+  .bannerPrincipalreposicao {
     background-position: right;
     width: 100%;
     height: 52rem;
