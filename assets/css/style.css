@@ -364,9 +364,9 @@ header {
   width: 100%;
 }
 
-.mainContentMobile p {
-  font-size: 2.3rem;
-  text-align: justify;
+.mainContentMobile section p {
+  font-size: 1.95rem;
+  text-align: left;
   line-height: 120%;
   padding-bottom: 5rem;
 }
