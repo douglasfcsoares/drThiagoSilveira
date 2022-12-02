@@ -313,8 +313,8 @@ header {
 }
 
 #aboutColumnLeft p {
-  font-size: 2.2rem;
-  text-align: justify;
+  font-size: 2.1rem;
+  text-align: left;
   line-height: 120%;
 }
 
@@ -462,6 +462,10 @@ header {
   color: var(--color-grey);
 }
 
+.treatmentsContent .treatmentsDouble section .testeDeCor {
+  color: var(--color-dark-grey);
+}
+
 /* ######################################################## END TREATMENTS */
 
 /* ######################################################## START CLINIC */
@@ -493,7 +497,7 @@ header {
 .clinicLeft h2 {
   font-size: 6rem;
   line-height: 6.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3.5rem;
   font-family: var(--fonte-button);
 }
 
@@ -595,6 +599,7 @@ header {
   max-width: 90%;
   font-size: 1.8rem;
   line-height: 120%;
+  color: var(--color-dark-grey);
 }
 
 .profile {
