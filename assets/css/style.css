@@ -459,10 +459,6 @@ header {
   font-family: var(--fonte-menu-texto);
   font-size: 1.8rem;
   line-height: 130%;
-  color: var(--color-grey);
-}
-
-.treatmentsContent .treatmentsDouble section .testeDeCor {
   color: var(--color-dark-grey);
 }
 
