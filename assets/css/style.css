@@ -313,6 +313,8 @@ header {
 }
 
 #aboutColumnLeft p {
+  font-family: var(--fonte-menu-texto);
+  -webkit-font-family: var(--fonte-menu-texto);
   font-size: 2.1rem;
   text-align: left;
   line-height: 120%;
@@ -340,6 +342,8 @@ header {
 }
 
 #aboutColumnRight .slide ul li span {
+  font-family: var(--fonte-menu-texto);
+  -webkit-font-family: var(--fonte-menu-texto);
   font-size: 2rem;
   line-height: 125%;
 }
@@ -389,6 +393,8 @@ header {
 }
 
 #aboutColumnCurriculumMobile .slideMobile ul li {
+  font-family: var(--fonte-menu-texto);
+  -webkit-font-family: var(--fonte-menu-texto);
   list-style: none;
   display: flex;
   align-items: center;
@@ -397,6 +403,8 @@ header {
 }
 
 #aboutColumnCurriculumMobile .slideMobile ul li span {
+  font-family: var(--fonte-menu-texto);
+  -webkit-font-family: var(--fonte-menu-texto);
   font-size: 2.2rem;
   line-height: 125%;
 }
@@ -409,6 +417,7 @@ header {
 
 #aboutColumnCurriculumMobile .slideMobile ul li span strong {
   font-family: var(--fonte-titulos);
+  -webkit-font-family: var(--fonte-titulos);
 }
 
 /* ######################################################## END ABOUT */
@@ -457,9 +466,12 @@ header {
 
 .treatmentsContent .treatmentsDouble section p {
   font-family: var(--fonte-menu-texto);
+  -webkit-font-family: var(--fonte-menu-texto);
   font-size: 1.8rem;
+  -webkit-font-size: 1.8rem;
   line-height: 130%;
   color: var(--color-dark-grey);
+  -webkit-color: var(--color-dark-grey);
 }
 
 /* ######################################################## END TREATMENTS */
@@ -1105,7 +1117,7 @@ footer h3 {
   }
 
   .aboutMobile h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .aboutMobile p {
@@ -1134,7 +1146,7 @@ footer h3 {
     ul
     li
     span {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   #aboutColumnCurriculumMobile
@@ -1145,7 +1157,7 @@ footer h3 {
     li
     span
     strong {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: var(--fonte-bold);
   }
 
@@ -1174,7 +1186,7 @@ footer h3 {
   #treatments {
     max-width: 480px;
     margin: 0 auto;
-    padding: 9rem 5rem 5rem 6rem;
+    padding: 9rem 4rem 4rem 6rem;
   }
 
   #treatments h2 {
@@ -1220,18 +1232,14 @@ footer h3 {
     font-size: 1.3rem;
   }
 
-  -webkit-.treatmentsContentMobile .treatmentsDouble section p {
-    font-size: 1rem;
-    font-family: var(--fonte-menu-texto);
-    color: var(--color-grey);
-  }
-
   .treatmentsContentMobile .treatmentsDouble section p {
     font-size: 1rem;
-    font-family: var(--fonte-menu-texto);
-    color: var(--color-grey);
+    line-height: 120%;
+    font-family: var(--fonte-titulos);
+    -webkit-font-family: var(--fonte-titulos);
+    color: var(--color-dark-grey);
+    -webkit-color: var(--color-dark-grey);
   }
-
 
   #clinic {
     padding-top: 9rem;
