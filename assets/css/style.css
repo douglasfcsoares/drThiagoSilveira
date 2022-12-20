@@ -12,8 +12,10 @@
   --color-grey: #aaaaaa;
   --color-dark-grey: #454444;
   --color-light-grey: #5a5959;
+  --color-dark: #252525;
 
   --fonte-menu-texto: "gotham-light";
+  --fonte-texto: "gotham-xlight";
   --fonte-paciente-google: "gotham-thin";
   --fonte-titulos: "gothamBook";
   --fonte-bold: "gotham-bold";
@@ -42,6 +44,16 @@
 @font-face {
   font-family: "gotham-light";
   src: url("../fonts/gotham/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "gotham-xlight";
+  src: url("../fonts/gotham/GothamLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "gotham-xlight";
+  src: url("../fonts/gotham/Gotham-XLight.otf") format("opentype");
 }
 
 @font-face {
@@ -465,13 +477,13 @@ header {
 }
 
 .treatmentsContent .treatmentsDouble section p {
-  font-family: var(--fonte-menu-texto);
-  -webkit-font-family: var(--fonte-menu-texto);
-  font-size: 1.8rem;
-  -webkit-font-size: 1.8rem;
+  font-family: var(--fonte-titulos);
+  -webkit-font-family: var(--fonte-titulos);
+  font-size: 1.7rem;
+  -webkit-font-size: 1.7rem;
   line-height: 130%;
-  color: var(--color-dark-grey);
-  -webkit-color: var(--color-dark-grey);
+  color: var(--color-dark);
+  -webkit-color: var(--color-dark);
 }
 
 /* ######################################################## END TREATMENTS */
@@ -1237,8 +1249,8 @@ footer h3 {
     line-height: 120%;
     font-family: var(--fonte-titulos);
     -webkit-font-family: var(--fonte-titulos);
-    color: var(--color-dark-grey);
-    -webkit-color: var(--color-dark-grey);
+    color: var(--color-dark);
+    -webkit-color: var(--color-dark);
   }
 
   #clinic {
