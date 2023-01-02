@@ -292,7 +292,7 @@ header {
 }
 
 .headLine #whatsapp img:hover {
- transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* ######################################################## END HOME */
@@ -472,8 +472,8 @@ header {
 .treatmentsContent .treatmentsDouble section h3 {
   font-family: var(--fonte-titulos);
   font-size: 2.4rem;
-  line-height: 2.6rem;
-  padding-bottom: 2rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
 
 .treatmentsContent .treatmentsDouble section p {
@@ -787,7 +787,6 @@ footer h3 {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
 }
 
 .manualBtn,
@@ -866,11 +865,11 @@ footer h3 {
   transition: 0.4s;
 }
 
-.autoBtn1,.autoBtn5,
+.autoBtn1,
+.autoBtn5,
 .autoBtn3 {
   background-color: var(--color-grey);
 }
-
 
 #radio1:checked ~ .navigationAuto .autoBtn1 {
   background-color: var(--color-grey);
@@ -880,7 +879,7 @@ footer h3 {
   background-color: var(--color-grey);
 }
 
-#radio2:checked~.navigationAuto .autoBtn1 {
+#radio2:checked ~ .navigationAuto .autoBtn1 {
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -892,7 +891,7 @@ footer h3 {
   background-color: var(--color-grey);
 }
 
-#radio4:checked~.navigationAuto .autoBtn3 {
+#radio4:checked ~ .navigationAuto .autoBtn3 {
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -904,7 +903,7 @@ footer h3 {
   background-color: var(--color-grey);
 }
 
-#radio6:checked~.navigationAuto .autoBtn5 {
+#radio6:checked ~ .navigationAuto .autoBtn5 {
   background: rgba(0, 0, 0, 0);
 }
 
@@ -919,7 +918,6 @@ footer h3 {
     color: var(--color-white);
     height: fit-content;
     margin-top: -3rem;
-
   }
 
   .headLine h1 {
@@ -995,12 +993,12 @@ footer h3 {
   }
 
   .bannerPrincipalVitalidade {
-  background-image: url("../img/bannerVitalidadeMobile.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 0;
-  width: 100%;
+    background-image: url("../img/bannerVitalidadeMobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    width: 100%;
   }
 
   .bannerPrincipalreposicao {
@@ -1179,7 +1177,7 @@ footer h3 {
     width: 0.4rem;
     height: 0.4rem;
     padding: 0.4rem;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
   }
 
   .navigationAuto div,
@@ -1189,7 +1187,7 @@ footer h3 {
     width: 0.4rem;
     height: 0.4rem;
     padding: 0.4rem;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
   }
   .manual-btn-mobile {
     width: 1.2rem;
@@ -1225,14 +1223,15 @@ footer h3 {
     padding-bottom: 2rem;
     width: 100%;
   }
-    .treatmentsContentMobile .treatmentsDouble section {
+  .treatmentsContentMobile .treatmentsDouble section {
     width: 100%;
   }
 
-  .treatmentsContentMobile  .treatmentsDouble section h3 {
-  font-family: var(--fonte-bold);
-  padding-bottom: 1rem;
-  width: 100%;
+  .treatmentsContentMobile .treatmentsDouble section h3 {
+    font-size: 1.3rem;
+    font-family: var(--fonte-bold);
+    padding-bottom: 1rem;
+    width: 100%;
   }
 
   .treatmentsContentMobile .treatmentsDouble section img {
@@ -1240,17 +1239,11 @@ footer h3 {
     padding-bottom: 1rem;
   }
 
-  .treatmentsContentMobile .treatmentsDouble section h3 {
-    font-size: 1.3rem;
-  }
-
   .treatmentsContentMobile .treatmentsDouble section p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 120%;
-    font-family: var(--fonte-titulos);
-    -webkit-font-family: var(--fonte-titulos);
+    font-family: var(--fonte-menu-texto);
     color: var(--color-dark);
-    -webkit-color: var(--color-dark);
   }
 
   #clinic {
@@ -1293,10 +1286,10 @@ footer h3 {
     width: 22rem;
   }
 
-    .clinicMobile .buttonYellow {
-      width: 28rem;
-      text-align: left;
-    }
+  .clinicMobile .buttonYellow {
+    width: 28rem;
+    text-align: left;
+  }
 
   .clinicMobile .buttonYellow a img {
     width: 22rem;
@@ -1358,10 +1351,9 @@ footer h3 {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    gap: .1rem;
+    gap: 0.1rem;
   }
 
- 
   /* This is from w3schools */
   /* 
 https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
@@ -1408,7 +1400,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     position: absolute;
     width: 5rem;
     display: flex;
-    gap: .8rem;
+    gap: 0.8rem;
     justify-content: center;
     margin-top: -1.6rem;
     left: 40%;
@@ -1416,8 +1408,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   }
   .balls div {
     transition: all 0.4s;
-    border: .2rem solid var(--color-grey);
-    padding: .3rem;
+    border: 0.2rem solid var(--color-grey);
+    padding: 0.3rem;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -1435,9 +1427,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     width: 100%;
     padding-left: 1rem;
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
     flex-shrink: 0;
-    
   }
 
   #comments .commentsContentMobile .commentUnitMobile {
@@ -1445,8 +1436,6 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     width: 100%;
     flex-shrink: 0;
   }
-
-  
 
   .container .item .commentUnitMobile .profile {
     display: flex;
@@ -1469,13 +1458,22 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   .container .item .commentUnitMobile .profile .profileGoogle {
     margin-left: 0.5rem;
   }
-  
+
   .container .item .commentUnitMobile .profile .profileGoogle h4 {
     font-family: var(--fonte-titulos);
     font-size: 1.2rem;
   }
 
-  #comments .commentsContentMobile .container .galleryWrapper .gallery .item .commentUnitMobile .profile .profileGoogle p {
+  #comments
+    .commentsContentMobile
+    .container
+    .galleryWrapper
+    .gallery
+    .item
+    .commentUnitMobile
+    .profile
+    .profileGoogle
+    p {
     font-size: 1rem;
   }
 
@@ -1493,41 +1491,40 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     padding-left: 7rem;
   }
 
-    #footerContato h2 {
-      font-family: var(--fonte-bold);
-      font-size: 2rem;
-    }
-  
-    #footerContato h3 {
-      font-family: var(--fonte-button);
-      font-size: 1.6rem;
-    }
-  
-    #footerContato p {
-      font-family: var(--fonte-menu-texto);
-      text-decoration: none;
-      padding-bottom: 2rem;
-    }
-  
-    #footerContato {
-      padding: 2rem 0;
-    }
-  
-  
-    #footerLocation {
-      padding: 1rem 0;
-    }
-  
-    #footerLocation h2 {
-      font-size: 1.8rem;
-      font-family: var(--fonte-bold);
-      padding: 0 0 1.8rem 0;
-    }
-  
-    #footerLocation p {
-      font-size: 1.4rem;
-      padding: 1.5rem 0;
-    }
+  #footerContato h2 {
+    font-family: var(--fonte-bold);
+    font-size: 2rem;
+  }
+
+  #footerContato h3 {
+    font-family: var(--fonte-button);
+    font-size: 1.6rem;
+  }
+
+  #footerContato p {
+    font-family: var(--fonte-menu-texto);
+    text-decoration: none;
+    padding-bottom: 2rem;
+  }
+
+  #footerContato {
+    padding: 2rem 0;
+  }
+
+  #footerLocation {
+    padding: 1rem 0;
+  }
+
+  #footerLocation h2 {
+    font-size: 1.8rem;
+    font-family: var(--fonte-bold);
+    padding: 0 0 1.8rem 0;
+  }
+
+  #footerLocation p {
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1590,7 +1587,6 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 46rem;
     /* height: 100%; */
   }
-
 
   .bannerPrincipalEmagrecimento,
   .bannerPrincipalVitalidade,
@@ -1677,7 +1673,6 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   #footerContato {
     padding: 2rem 0;
   }
-
 
   #footerLocation {
     padding: 1rem 0;
